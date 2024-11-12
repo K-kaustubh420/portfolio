@@ -1,0 +1,219 @@
+<!doctype html>
+<html lang="en">
+  <head>
+    <meta charset="utf-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1">
+    <title>Portfolio - Kaustubh Kushwaha</title>
+    <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.3/dist/css/bootstrap.min.css" rel="stylesheet" integrity="sha384-QWTKZyjpPEjISv5WaRU9OFeRpok6YctnYmDr5pNlyT2bRjXh0JMhjY6hW+ALEwIH" crossorigin="anonymous">
+    <style>
+      body {
+        font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
+        background-color: #121212;
+        color: #ffffff;
+        margin: 0;
+        padding: 0;
+        transition: background-color 0.3s ease-in-out;
+      }
+      .navbar {
+        background-color: #1f1f1f;
+        padding: 15px;
+        position: fixed;
+        width: 100%;
+        top: 0;
+        left: 0;
+        z-index: 100;
+        box-shadow: 0 2px 10px rgba(0, 0, 0, 0.2);
+      }
+      .navbar-brand {
+        color: #ffffff;
+        font-weight: bold;
+      }
+      .hero {
+        background-color: #1c1c1c;
+        color: #fff;
+        padding: 120px 20px;
+        text-align: left;
+        margin-top: 70px;
+        box-shadow: 0 10px 30px rgba(0, 0, 0, 0.3);
+      }
+      .hero h1 {
+        font-size: 3rem;
+        font-weight: bold;
+      }
+      #animated-text {
+        font-size: 1.5rem;
+        display: inline-block;
+        border-right: 2px solid #fff;
+        animation: blink 0.7s step-end infinite;
+      }
+      @keyframes blink {
+        from, to { border-color: transparent; }
+        50% { border-color: #fff; }
+      }
+      .section {
+        padding: 60px 20px;
+        background-color: #222;
+        margin-top: 20px;
+        border-radius: 15px;
+        box-shadow: 0 5px 20px rgba(0, 0, 0, 0.3);
+      }
+      .card {
+        background-color: #333;
+        border: none;
+        color: #fff;
+        transition: transform 0.3s ease;
+      }
+      .card:hover {
+        transform: translateY(-10px);
+      }
+      .btn-custom {
+        margin: 10px 0;
+        transition: background-color 0.3s ease;
+      }
+      .btn-custom:hover {
+        background-color: #f39c12;
+      }
+      footer {
+        text-align: center;
+        padding: 20px;
+        background-color: #1f1f1f;
+        color: #fff;
+        position: fixed;
+        bottom: 0;
+        width: 100%;
+        border-top: 1px solid #444;
+      }
+      .badge-custom {
+        margin: 5px;
+        padding: 10px;
+        font-size: 1rem;
+        transition: transform 0.3s ease;
+      }
+      .badge-custom:hover {
+        transform: scale(1.1);
+      }
+      .badge-frontend { background-color: #f39c12; }
+      .badge-mern { background-color: #2ecc71; }
+      .badge-node { background-color: #27ae60; }
+      .badge-python { background-color: #3498db; }
+      .badge-js { background-color: #9b59b6; }
+      .badge-sql { background-color: #e74c3c; }
+      .badge-html { background-color: #f1c40f; }
+      .badge-nextjs { background-color: #1abc9c; }
+      .card-body small {
+        display: block;
+        margin-top: 5px;
+        color: #aaa;
+        font-size: 0.9rem;
+      }
+    </style>
+  </head>
+  <body>
+    <nav class="navbar">
+      <a class="navbar-brand" href="#">Portfolio</a>
+    </nav>
+
+    <header class="hero">
+      <h1 style="color: blue;">Hello, I'm Kaustubh Kushwaha</h1>
+      <p style="color: yellow;" id="animated-text"></p>
+    </header>
+
+    <section class="section">
+      <div class="container">
+        <h2>About Me</h2>
+        <p>
+          Hi, I'm Kaustubh Kushwaha. I'm passionate about frontend development, though I also have backend skills. My tech stack includes MERN, Next.js, SQL, and I’m proficient in Python, C, C++, and JavaScript, with solid experience in HTML and CSS.
+          
+          I've worked on projects for Liftoff, Aarush Club, and Kiwi, a SaaS startup, mainly focusing on frontend development. I’m also currently working on a print website for a client and building an automation engine in Node.js. I’m still learning and improving, but I’m always eager to take on new challenges and grow as a full-stack developer.
+        </p>
+
+        <h3>Core Skills</h3>
+        <span class="badge badge-custom badge-frontend">Frontend Development</span>
+        <span class="badge badge-custom badge-mern">MERN Stack</span>
+        <span class="badge badge-custom badge-node">Node.js</span>
+        <span class="badge badge-custom badge-python">Python</span>
+        <span class="badge badge-custom badge-js">JavaScript</span>
+        <span class="badge badge-custom badge-sql">SQL</span>
+        <span class="badge badge-custom badge-html">HTML & CSS</span>
+        <span class="badge badge-custom badge-nextjs">Next.js</span>
+      </div>
+    </section>
+
+    <section class="section">
+      <div class="container">
+        <h2>Connect with Me</h2>
+        <div class="d-flex flex-wrap">
+          <div class="card m-3" style="width: 18rem;">
+            <div class="card-body">
+              <h5 class="card-title">GitHub</h5>
+              <a href="https://github.com/K-kaustubh420" class="btn btn-dark btn-custom" target="_blank">Visit My GitHub</a>
+              <small class="d-block text-muted">github.com/K-kaustubh420</small>
+            </div>
+          </div>
+          <div class="card m-3" style="width: 18rem;">
+            <div class="card-body">
+              <h5 class="card-title">LinkedIn</h5>
+              <a href="https://www.linkedin.com/in/kaustubh-kushwaha-b61503285" class="btn btn-primary btn-custom" target="_blank">Connect on LinkedIn</a>
+              <small class="d-block text-muted">linkedin.com/in/kaustubh-kushwaha-b61503285</small>
+            </div>
+          </div>
+          <div class="card m-3" style="width: 18rem;">
+            <div class="card-body">
+              <h5 class="card-title">Email</h5>
+              <a href="mailto:kkaustubh92@gmail.com" class="btn btn-success btn-custom">Send an Email</a>
+              <small class="d-block text-muted">kkaustubh92@gmail.com</small>
+            </div>
+          </div>
+          <div class="card m-3" style="width: 18rem;">
+            <div class="card-body">
+              <h5 class="card-title">Phone</h5>
+              <p>+91 7521850380</p>
+            </div>
+          </div>
+        </div>
+      </div>
+    </section>
+
+    <footer>
+      <p>&copy; 2024 Kaustubh Kushwaha. All rights reserved.</p>
+    </footer>
+
+    <script>
+      const phrases = [
+        "Front-End Developer & Designer",
+        "Student",
+        "Lifelong Learner",
+        "and i like to experiment"
+      ];
+      let currentPhraseIndex = 0;
+      let charIndex = 0;
+      const textElement = document.getElementById('animated-text');
+
+      function typePhrase() {
+        const currentPhrase = phrases[currentPhraseIndex];
+        if (charIndex < currentPhrase.length) {
+          textElement.textContent += currentPhrase.charAt(charIndex);
+          charIndex++;
+          setTimeout(typePhrase, 100);
+        } else {
+          setTimeout(erasePhrase, 2000);
+        }
+      }
+
+      function erasePhrase() {
+        if (charIndex > 0) {
+          textElement.textContent = textElement.textContent.slice(0, -1);
+          charIndex--;
+          setTimeout(erasePhrase, 50);
+        } else {
+          currentPhraseIndex = (currentPhraseIndex + 1) % phrases.length;
+          setTimeout(typePhrase, 500);
+        }
+      }
+
+      typePhrase();
+    </script>
+
+    <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.3/dist/js/bootstrap.bundle.min.js" integrity="sha384-QWTKZyjpPEjISv5WaRU9OFeRpok6YctnYmDr5pNlyT2bRjXh0JMhjY6hW+ALEwIH" crossorigin="anonymous"></script>
+  </body>
+</html>
